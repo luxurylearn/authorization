@@ -26,3 +26,9 @@ Then set the terminal path in JetBrains `settings>tools>terminal` to
      C:\Windows\System32\wsl.exe
      
 Now open the terminal. It should correctly move the current directory to the `/mnt/your/path`
+
+# Docker WSL setup
+If your environment is windows then you need to set up your docker to work through wsl.
+Following [instructions](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly) discovering everything you need.
+The topic alread contains link to source about installing wsl on your windows machine.
+Strongly recomended to use `/c` mount instead of `/mnt/c` one.
