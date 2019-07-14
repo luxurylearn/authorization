@@ -32,3 +32,11 @@ If your environment is windows then you need to set up your docker to work throu
 Following [instructions](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly) discovering everything you need.
 The topic alread contains link to source about installing wsl on your windows machine.
 Strongly recomended to use `/c` mount instead of `/mnt/c` one.
+
+# WSL know issues
+If you wsl bash do not load bash profile, try to check your `~/.bash_profile` has 
+```
+if [[ -f ~/.bashrc ]] ; then
+	. ~/.bashrc
+fi
+```
